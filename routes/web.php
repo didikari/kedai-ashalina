@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [DistanceController::class, 'index'])->name('jarak');
-Route::post('/hitung-jarak', [DistanceController::class, 'hitungJarak'])->name('hitung-jarak');
+Route::post('/', [DistanceController::class, 'hitungJarak'])
+    ->name('hitung-jarak')
+    ->middleware('preventDirectAccess');

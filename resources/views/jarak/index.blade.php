@@ -13,16 +13,17 @@
 
 <body>
     <div class="container">
-        <h4 class="pt-2 text-uppercase">Cek Ongkir Kedai Ashalina</h4>
         <div class="row">
-            <div class="col">
+            <div class="col pt-4">
+                <div class="alert alert-success">Diskon ongkir 20% Minimal Belanja Rp. 50.000</div>
+                <h4 class="text-uppercase">Cek Ongkir Kedai Ashalina</h4>
                 <form action="{{ route('hitung-jarak') }}" method="post">
                     @csrf <!-- Laravel menggunakan csrf token untuk keamanan -->
                     <input type="hidden" id="clientLatitude" name="clientLatitude">
                     <input type="hidden" id="clientLongitude" name="clientLongitude">
 
-                    <label for="purchase">Masukkan Belanja:</label>
-                    <input type="number" id="purchase" name="purchase"><br><br>
+                    <label for="purchase">Simulasi Belanja:</label>
+                    <input type="number" id="purchase" name="purchase" placeholder="Pembayaran" required><br><br>
 
                     <!-- Elemen div untuk peta -->
                     <div id="map" style="height: 400px; width: 100%;"></div>

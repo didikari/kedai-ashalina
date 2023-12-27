@@ -66,7 +66,7 @@ class DistanceController extends Controller
         $initialCostLessThan1km = 1000; // Biaya untuk jarak kurang dari 1 km
         $initialCost = 5000; // Biaya untuk jarak pertama 1 km
         $additionalCostPerKm = 5000; // Biaya tambahan per km setelah 1 km
-        $discountThreshold = 100000; // Ambang batas belanja untuk diskon
+        $discountThreshold = 50000; // Ambang batas belanja untuk diskon
         $discountPercentage = 20; // Persentase diskon jika belanja mencapai ambang batas
         $discountDistance = 10; // Jarak di mana diskon berlaku
 
